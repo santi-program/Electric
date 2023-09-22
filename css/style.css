@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #E4DFDF;
+    background-color: #dcdada;
 }
 
 .logo {
@@ -110,7 +110,6 @@ h1 {
 .cards {
     width: 25%;
     min-height: 29rem;
-    /* height: 28.125rem; */
     border: .0625rem solid black;
     border-radius: .9375rem;
     overflow: hidden;
@@ -242,8 +241,8 @@ h1 {
 /*contacto.html*/
 .cards-contact {
     font-family:'roboto', sans-serif;
-    width: 30%;
-    height: 100vh;
+    width: 40%;
+    height: 35rem;
     border: .0625rem solid black;
     border-radius: .9375rem;
     overflow: hidden;
@@ -253,15 +252,31 @@ h1 {
     display: flex;
     flex-direction: column;
     background-color: white;
+    align-items: center;
+    justify-content: center;
 }
 .contacto{
+    display: flex;
+    flex-direction: column;
     font-family:'roboto', sans-serif;
     background-color: #ffffff;
     width: 100%;
     max-width: 400px;
-    padding: 4.5rem 3rem;
     text-align: center;
-    padding-top: 35%;
+}
+.cards-contact h3:hover{
+    color: red;
+}
+.form-submit-cont{
+    background: #0d6efd;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+    width: 100%;
+    margin-top: 2rem;
 }
 
 
@@ -307,6 +322,8 @@ h1 {
     box-shadow: 2px 2px 10px gray;
     border: .375rem solid black;
     border-radius: .9375rem;
+    background-color: black;
+    color: white;
 }
 
 
@@ -318,16 +335,23 @@ h1 {
     box-shadow: 2px 2px 10px gray;
     border: .375rem solid black;
     border-radius: .9375rem;
+    background-color: black;
+}
+.mapa h2{
+    color: white;
 }
 
 .mapa h3 {
     margin-right: 42%;
     margin-top: 5%;
+    color: white;
 }
+
 
 .mapa p {
     text-align: left;
     margin-left: 17%;
+    color: white;
 }
 
 .mapa iframe {
@@ -389,26 +413,51 @@ h1 {
 .leg a:hover {
     color: red;
 }
-
-.testimonios {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+.testimonios{
+    padding: 40px 0;
+    color: #434343;
+    text-align: center;
 }
-
-.testimonios .nosotros {
-    display: flex;
-    width: 100%;
-    height: 9.5rem;
-    margin: .25rem 0rem 1.25rem;
-    border: .0625rem solid black;
-    border-radius: .9375rem;
-    text-align: left;
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px ;
 }
-
-.testimonios .nosotros p {
-    margin-left: 2.25rem;
-    margin-top: 3.25rem;
+.border{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.col{
+    flex: 33.333%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.testimonio{
+    background: #fff;
+    padding: 30px;
+}
+.testimonio img{
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+}
+.name{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin: 1.25rem 0;
+}
+.stars{
+    color: #6ab04c;
+    margin-bottom: 1.25rem;
 }
 
 /*terminos.html*/
@@ -530,6 +579,28 @@ footer {
         text-align: left;
         font-size: 3vw;
     }
+    .grid-nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .cards-contact{
+        width: 90%;
+    }
+    .historia{
+        margin-top: 3.25rem;
+    }
+    .mapa{
+        margin: 2.625rem;
+    }
+    .col{
+        flex: 100%;
+        max-width: 80%;
+    }
+
 }
 @media(max-width: 575px){
     .introduccion .biografia p{
@@ -539,6 +610,10 @@ footer {
     }
     .introduccion .biografia h2{
         font-size: 1.5rem;
+    }
+    .col{
+        flex: 100%;
+        max-width: 100%;
     }
 }
 
@@ -564,6 +639,12 @@ footer {
 @media(max-width: 400px){
     .wpp{
         display: none;
+    }
+    .ubicacion{
+        margin: .625rem;
+    }
+    .mapa{
+        margin: .625rem;
     }
 }
 
