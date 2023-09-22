@@ -1,98 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electric</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-lg  bg-black border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/img/logo.png"
-                        alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Prodructos
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./jbl.html">Parlantes</a></li>
-                                <li><a class="dropdown-item" href="./apple.html">Smarphone</a></li>
-                                <li><a class="dropdown-item" href="./smart.html">Televisores</a></li>
-                                <li><a class="dropdown-item" href="./silla.html">Sillas Gmaer</a></li>
-                                <li><a class="dropdown-item" href="./auris.html">Auriculares</a></li>
-                                <li><a class="dropdown-item" href="./notebook.html">Notebook</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./cliente.html">Clientes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contactos</a>
-                        </li>
+              <a class="navbar-brand" href="../index.html"><img class="logo" src="../assets/img/logo.png" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Prodructos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./jbl.html">Parlantes</a></li>
+                      <li><a class="dropdown-item" href="./apple.html">Smarphone</a></li>
+                      <li><a class="dropdown-item" href="./smart.html">Televisores</a></li>
+                      <li><a class="dropdown-item" href="./silla.html">Sillas Gmaer</a></li>
+                      <li><a class="dropdown-item" href="./auris.html">Auriculares</a></li>
+                      <li><a class="dropdown-item" href="./notebook.html">Notebook</a></li>
                     </ul>
-                </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./cliente.html">Clientes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contactos</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
-    </header>
+          </nav>
+        </header>
+
     <main>
-        <section class="container-cards">
-            <div class="cards-contact">
-                <h2>Preguntas Frecuentes</h2> <br>
-                <h3>¿Como busco un producto?</h3>
-                <p> Para buscar el producto deseado debe dirigirse al apartado de prductos y seleccionar la categoria
-                    deseada. </p>
-                <h3>¿Como ver las especificasiones del producto deseado?</h3>
-                <p> Para ver las especificaciones de dicho producto solo debes presionarlo y te brindaremos todo lo que
-                    debes saber!!</p>
-                <h3>¿Como dirigirme al local fisico?</h3>
-                <p>Debes ir al final del sitio en el apartado de inicio donde te brindamos un mapa para que puedas
-                    visitarnos!!</p>
+        <form class="form">
+            <h2 class="form-titulo">Registrarse</h2>
+            <P class="form-inicio">¿Ya tienes cuenta? <a href="../index.html" class="form-link">Entra Aqui</a></p>
+            <div class="form-container">
+                <div class="form-grupo">
+                    <input type="text" id="nombre" class="form-input" placeholder=" ">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <div class="form-linea"></div>
+                </div>
+                <div class="form-grupo">
+                    <input type="text" id="Apellido" class="form-input" placeholder=" ">
+                    <label for="Apellido" class="form-label">Apellido</label>
+                    <div class="form-linea"></div>
+                </div>
+                <div class="form-grupo">
+                    <input type="text" id="User" class="form-input" placeholder=" ">
+                    <label for="User" class="form-label">Usuario</label>
+                    <div class="form-linea"></div>
+                </div>
+                <div class="form-grupo">
+                    <input type="text" id="Email" class="form-input" placeholder=" ">
+                    <label for="Email" class="form-label">Correo Electronico</label>
+                    <div class="form-linea"></div>
+                </div>
+                <div class="form-grupo">
+                    <input type="text" id="password" class="form-input" placeholder=" ">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <div class="form-linea"></div>
+                </div>
+                <input type="submit" class="form-submit" value="Iniciar">
             </div>
-            <div class="cards-contact">
-                <form class="contacto">
-                    <h2 class="form-titulo">¿En que podemos ayudarte?</h2> <br>
-                    <div class="form-grupo">
-                        <input type="nombre" id="nombre" class="form-input" placeholder="">
-                        <label for="nombre" class="form-label">nombre:</label>
-                        <div class="form-linea"></div>
-                    </div>
-                    <div class="form-grupo">
-                        
-                        <input type="Correo electronico" id="Correo electronico" class="form-input"
-                            placeholder="">
-                        <label for="Correo electronico" class="form-label">Correo electronico:</label>
-                        <div class="form-linea"></div>
-                    </div>
-                    <div class="form-grupo">
-                        <input type="consulta" id="consulta" class="form-input" placeholder="">
-                        <label for="consulta" class="form-label">consulta:</label>
-                        <div class="form-linea"></div>
-                    </div>
-                    <input type="submit" class="form-submit" value="Enviar">
-                </form>
-            </div>
-        </section>
+        </form>
     </main>
+
     <section class="footer">
         <a class="wpp" href="https://web.whatsapp.com/" target="_blank"><img src="../assets/img/wpp.png" alt=""></a>
         <a class="flecha" href="#"><img src="../assets/img/flecha.png" alt=""></a>
@@ -116,17 +106,17 @@
                     <div class="col-6 col-md-2 mb-3">
                         <h5>Categorias</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a class="pseudo" href="../pages/jbl.html"
+                            <li class="nav-item mb-2"><a class="pseudo" href="./pages/jbl.html"
                                     class="nav-link p-0 text-white">Parlantes</a></li>
                             <li class="nav-item mb-2"><a class="pseudo" href="../pages/smart.html"
                                     class="nav-link p-0 text-white">Televisores</a></li>
-                            <li class="nav-item mb-2"><a class="pseudo" href="../pages/apple.html"
+                            <li class="nav-item mb-2"><a class="pseudo" href="./pages/apple.html"
                                     class="nav-link p-0 text-white">Smarphone</a></li>
-                            <li class="nav-item mb-2"><a class="pseudo" href="../pages/silla.html"
+                            <li class="nav-item mb-2"><a class="pseudo" href="./pages/silla.html"
                                     class="nav-link p-0 text-white">Sillas Gamer</a></li>
-                            <li class="nav-item mb-2"><a class="pseudo" href="../pages/auris.html"
+                            <li class="nav-item mb-2"><a class="pseudo" href="./pages/auris.html"
                                     class="nav-link p-0 text-white">Auriculares</a></li>
-                            <li class="nav-item mb-2"><a class="pseudo" href="../pages/notebook.html"
+                            <li class="nav-item mb-2"><a class="pseudo" href="./pages/notebook.html"
                                     class="nav-link p-0 text-white">Notebook</a></li>
                         </ul>
                     </div>
@@ -134,11 +124,11 @@
                     <div class="col-6 col-md-2 mb-3">
                         <h5>Legales</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a class="pseudo" href="../pages/terminos.html"
+                            <li class="nav-item mb-2"><a class="pseudo" href="./pages/terminos.html"
                                     class="nav-link p-0 text-white">Terminos & Condiciones</a></li>
-                            <li class="nav-item mb-2"><a class="pseudo" href="../pages/politicas.html"
+                            <li class="nav-item mb-2"><a class="pseudo" href="./pages/politicas.html"
                                     class="nav-link p-0 text-white">Politicas de Privacidad</a></li>
-                            <li class="nav-item mb-2"><a class="pseudo" href="../pages/cambio.html"
+                            <li class="nav-item mb-2"><a class="pseudo" href="./pages/cambio.html"
                                     class="nav-link p-0 text-white">Politicas de Cambio</a></li>
                         </ul>
                     </div>
@@ -161,8 +151,9 @@
                     <p>© 2023 Company, Santiago Rodriguez.</p>
                     <ul class="list-unstyled d-flex">
                         <li class="ms-3"><a class="link-body-emphasis" href="https://es-la.facebook.com/"
-                                target="_blank"><img class="redes bg-white" src="../assets/img/footer/facebook.png"
-                                    alt=""><svg class="bi" width="24" height="24">
+                                target="_blank"><img class="redes bg-white"
+                                    src="../assets/img/footer/facebook.png" alt=""><svg class="bi" width="24"
+                                    height="24">
                                     <use xlink:href="#twitter"></use>
                                 </svg></a></li>
                         <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/"
@@ -171,8 +162,8 @@
                                     <use xlink:href="#instagram"></use>
                                 </svg></a></li>
                         <li class="ms-3"><a class="link-body-emphasis" href="https://twitter.com/?lang=es"
-                                target="_blank"><img class="bg-white" src="../assets/img/footer/twitter.png" alt=""><svg
-                                    class="bi" width="24" height="24">
+                                target="_blank"><img class="bg-white" src="../assets/img/footer/twitter.png"
+                                    alt=""><svg class="bi" width="24" height="24">
                                     <use xlink:href="#facebook"></use>
                                 </svg></a></li>
                         <li class="ms-3"><a class="link-body-emphasis" href="https://ar.linkedin.com/"
@@ -192,5 +183,3 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 </body>
-
-</html>

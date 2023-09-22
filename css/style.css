@@ -17,7 +17,7 @@ header{
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
 }
 header nav ul{
     display: flex;
@@ -53,7 +53,7 @@ header nav ul{
 .container-cards {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -148,6 +148,9 @@ h1 {
     font-weight: 400;
     color: black;
 }
+.form-link:hover{
+    color: red;
+}
 .form-container{
     margin-top: 3rem;
     display: grid;
@@ -238,22 +241,30 @@ h1 {
 
 /*contacto.html*/
 .cards-contact {
-    width: 20rem;
-    height: 28.125rem;
+    font-family:'roboto', sans-serif;
+    width: 30%;
+    height: 100vh;
     border: .0625rem solid black;
     border-radius: .9375rem;
     overflow: hidden;
-    box-shadow: 2px 2px 10px gray;
     margin: 5px;
     text-align: center;
-}
-
-.cards-contact form label {
     color: black;
     display: flex;
     flex-direction: column;
-
+    background-color: white;
 }
+.contacto{
+    font-family:'roboto', sans-serif;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 4.5rem 3rem;
+    text-align: center;
+    padding-top: 35%;
+}
+
+
 
 /*productos.html*/
 .categorias {
