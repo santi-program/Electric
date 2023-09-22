@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Oswald:wght@400;600&family=Roboto:ital,wght@0,300;0,500;1,400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -123,7 +125,90 @@ h1 {
 .cards img {
     width: 100%;
 }
+.form{
+    font-family:'roboto', sans-serif;
+    background-color: #ffffff;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
 
+}
+.form-titulo{
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+.form-inicio{
+    font-weight: 300;
+}
+.form-link{
+    font-weight: 400;
+    color: black;
+}
+.form-container{
+    margin-top: 3rem;
+    display: grid;
+    gap: 2.5rem;
+}
+.form-grupo{
+    position: relative;
+    --color: gray;
+}
+.form-input{
+    width: 100%;
+    background: none;
+    color: grey;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+
+}
+.form-input:not(:placeholder-shown){
+    color: gray;
+}
+.form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #0d6efd;
+}
+.form-label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+
+}
+.form-submit{
+    background: #0d6efd;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+.form-linea{
+    position: absolute ;
+    border: 0;
+    left: 0;
+    width: 100%;
+    height: .0625rem;
+    background-color: #0d6efd;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+.form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label{
+    transform: scale(0.6);
+}
 .mapa {
     text-align: center;
 }
@@ -460,6 +545,9 @@ footer {
     }
     .introduccion .biografia-2{
         display: none;
+    }
+    .form-titulo{
+        font-size:1.5rem ;
     }
 }
 @media(max-width: 400px){
