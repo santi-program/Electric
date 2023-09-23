@@ -109,7 +109,7 @@ h1 {
 
 .cards {
     width: 25%;
-    min-height: 29rem;
+    height: 29rem;
     border: .0625rem solid black;
     border-radius: .9375rem;
     overflow: hidden;
@@ -592,6 +592,9 @@ footer {
     }
     .historia{
         margin-top: 3.25rem;
+    }
+    .ubicacion{
+        margin: 2.625rem;
     }
     .mapa{
         margin: 2.625rem;
