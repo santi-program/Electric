@@ -222,28 +222,44 @@ h1 {
     text-align: center;
 }
 
-/*jbl.html*/
-.vista-previa img {
-    width: 35rem;
-    height: 35rem;
-}
+/*productos.html*/
+
 
 .vista-previa {
-    display: flex;
+    display: grid;
+    background-color: white;
+    padding: 8%;
+    margin: 8%;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "h1 h1 h1 h1"
+    ". border border ."
+    "img img h2 h2"
+    "img img p p"
+    "img img p p"
+
+}
+.vista-previa h1{
+    grid-area: h1;
+}
+.border{
+    grid-area: border;
+
+}
+.vista-previa img {
+    grid-area: img;
+    margin-right: 2.25rem;
+    width: 25rem;
+    height: 25rem;
+}
+.vista-previa h3{
+    grid-area: h2;
 }
 
 .vista-previa p {
-    margin-top: 1.25rem;
+    grid-area: p;
 }
-
-.parrafo {
-    display: flex;
-    flex-direction: column;
-    margin: 6.25rem;
-}
-
-
-
 
 /*contacto.html*/
 .cards-contact {
@@ -432,9 +448,17 @@ h1 {
 .Legales {
     text-align: center;
 }
-
+.h1-clientes{
+    text-align: center;
+    padding-top: 2.25rem;
+    color: #434343;
+}
+.clientes-info{
+    text-align: center;
+}
 .leg {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
     gap: 1.5rem;
@@ -442,11 +466,14 @@ h1 {
 }
 
 .leg a {
+
     text-decoration: none;
+    padding-left: 1.625rem;
+    padding-right: 1.625rem;
 }
 
 .leg a:hover {
-    color: red;
+    background-color: #0c52bd;
 }
 .testimonios{
     padding: 40px 0;
@@ -468,11 +495,17 @@ h1 {
     overflow: hidden;
     padding: 0 20px ;
 }
+.border2{
+    width: 100px;
+    height: 3px;
+    background: #6ab04c;
+    margin: 15px auto;
+}
 .border{
     width: 160px;
     height: 5px;
     background: #6ab04c;
-    margin: 26px auto;
+    margin: 23px auto;
 }
 .row{
     display: flex;
@@ -642,12 +675,21 @@ footer {
         flex: 100%;
         max-width: 80%;
     }
+    .vista-previa{
+        display: flex;
+        flex-direction: column;
+    }
 
 }
 @media(max-width: 575px){
     .col{
         flex: 100%;
         max-width: 100%;
+    }
+    .vista-previa img{
+        width: 15rem;
+        height: 15rem;
+        margin: auto;
     }
 }
 
@@ -657,6 +699,11 @@ footer {
     }
     .form-titulo{
         font-size:1.5rem ;
+    }
+    .vista-previa img{
+        width: 15rem;
+        height: 15rem;
+        margin: auto;
     }
 }
 @media(max-width: 400px){
@@ -679,6 +726,11 @@ footer {
     }
     .p1{
         display: none;
+    }
+    .vista-previa img{
+        width: 10rem;
+        height: 10rem;
+        margin: auto;
     }
 }
 
