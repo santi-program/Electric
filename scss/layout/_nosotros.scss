@@ -1,0 +1,172 @@
+.grid-nosotros{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas:
+        ". . . . . . . ."
+        ". . historia historia historia historia . ."
+        ". . historia historia historia historia . ."
+        ". ubicacion ubicacion ubicacion mapa mapa mapa ."
+        ". ubicacion ubicacion ubicacion mapa mapa mapa ."
+        ". ubicacion ubicacion ubicacion mapa mapa mapa ."
+        ". . que-vendemos que-vendemos que-vendemos que-vendemos . ."
+        ". . que-vendemos que-vendemos que-vendemos que-vendemos . ."
+    ;
+    gap: 4rem;
+    .historia{
+        grid-area: historia;
+        text-align: center;
+        margin: .625rem;
+    }
+    .ubicacion {
+        grid-area: ubicacion;
+        height: 100%;
+        align-self: center;
+        text-align: center;
+        box-shadow: 2px 2px 10px gray;
+        border: .375rem solid black;
+        border-radius: .9375rem;
+        background-color: black;
+        color: white;
+    }
+    .mapa {
+        grid-area: mapa;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        overflow: hidden;
+        object-fit: cover;
+        box-shadow: 2px 2px 10px gray;
+        border: .375rem solid black;
+        border-radius: .9375rem;
+        background-color: black;
+        h2{
+            color: white;
+            
+        }
+        h3{
+            margin-top: 1.625rem;
+            margin-right: 12rem;
+            color: white;
+        }
+        p{
+            margin-right: 10rem ;
+            color: white;
+            margin-bottom: 1.625rem;
+        }
+        iframe{
+            width: 19rem;
+            height: 18.75rem;
+            box-shadow: 2px 2px 10px gray;
+            border-radius: .9375rem;
+        }
+        .ir{
+            text-align: center;
+            margin: 6%;
+            background-color: #0d6efd;
+            color: white;
+            font-size: 1.25rem;
+            width: 4rem;
+            height: 1.875rem;
+            text-decoration: none;
+            border-radius: .625rem;
+            border: none;
+        }
+        
+    }
+    .Que-vendemos {
+        grid-area: que-vendemos;
+        text-align: center;
+    }
+}
+.introduccion {
+    display: flex;
+    width: 100%;
+    height: 31.25rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    .biografia {
+        width: 34.375rem;
+        height: 9rem;
+        overflow: hidden;
+        margin: .3125rem;
+        padding-right: 1.25rem;
+        text-align: center;
+    }
+    .separador {
+        margin-right: 7%;
+        width: .125rem;
+        height: 15.625rem;
+        background-color: black;
+    }
+    .biografia-2 {
+        padding-right: 9.625rem;
+        width: 25rem;
+        height: 21rem;
+        overflow: hidden;
+        text-align: center;
+        p{
+            margin-top: .925rem;
+            margin-left: 1.625rem;
+        }
+        img{
+            margin-left: 1.325rem;
+            width: 9.375rem;
+            height: 9.375rem;
+        }
+    }
+}
+.quienes-somos{
+    margin-top: 2.25rem;
+}
+.inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px ;
+    .nosotros-card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-shadow: 2px 2px 10px gray;
+        border-radius: .9375rem;
+        margin-bottom: 3.575rem;
+        .col{
+            flex: 33.333%;
+            max-width: 33.33%;
+            box-sizing: border-box;
+            padding: 15px;
+            .testimonio{
+                display: grid;
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                padding: 30px;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-areas:
+                "img p1 p1 p1 "
+                "p2 p2 p2 p2 ";
+                column-gap: .625rem;
+                img{
+                    grid-area: img;
+                    width: 6.25rem;
+                    border-radius: 50%;
+                }
+                .p1{
+                    grid-area: p1;
+                }
+                .p2{
+                    grid-area: p2;
+                    margin-bottom: 1.25rem;
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,98 @@
+.container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .cards-contact {
+        font-family:'roboto', sans-serif;
+        width: 40%;
+        height: 35rem;
+        border: .0625rem solid black;
+        border-radius: .9375rem;
+        overflow: hidden;
+        margin: 5px;
+        text-align: center;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+        .contacto{
+            flex-direction: column;
+            display: flex;
+            font-family:'roboto', sans-serif;
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            .form-titulo{
+                font-size: 2rem;
+                margin-bottom: .5rem;
+            }
+            .form-grupo{
+                position: relative;
+                --color: gray;
+                .form-input{
+                    width: 100%;
+                    background: none;
+                    color: grey;
+                    font-size: 1rem;
+                    padding: .9em .6em;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid var(--color);
+                    &:not(:placeholder-shown){
+                        color: gray;   
+                    }
+                    &:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label{
+                        transform: translateY(-2px) scale(.7);
+                        transform-origin: left top;
+                        color: #0d6efd;
+                    }
+                }
+                .form-label{
+                    color: var(--color);
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    left: 5px;
+                    transform: translateY(10px);
+                    transition: transform .5s, color .3s;
+                
+                }
+                .form-linea{
+                    position: absolute ;
+                    border: 0;
+                    left: 0;
+                    width: 100%;
+                    height: .0625rem;
+                    background-color: #0d6efd;
+                    transform: scale(0);
+                    transform: left bottom;
+                    transition: transform .4s;
+                }
+            }
+            .form-submit-cont{
+                background: #0d6efd;
+                color: #ffffff;
+                font-weight: 200;
+                font-size: 1rem;
+                padding: .8em 0;
+                border: none;
+                border-radius: .5em;
+                width: 100%;
+                margin-top: 2rem;
+            }
+        }
+        h3:hover{
+            color: red;
+        }
+    }
+    
+}

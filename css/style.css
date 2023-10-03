@@ -1,736 +1,603 @@
-@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Oswald:wght@400;600&family=Roboto:ital,wght@0,300;0,500;1,400&display=swap');
-
+/*primero variables mixins y todo utilities*/
+/*todo lo de base*/
+/*estilos generales*/
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&family=Oswald:wght@400;600&family=Roboto:ital,wght@0,300;0,500;1,400&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #dcdada;
+  background-color: #dcdada;
 }
 
-.logo {
-    width: 2.5rem;
-}
-header{
-    width: 100%;
-    position: sticky;
-    top: 0;
-    z-index: 3;
-}
-header nav ul{
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.navbar {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 1.5rem;
+h1 {
+  text-align: center;
 }
 
-.navbar li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5625rem;
+/*todo layout*/
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
-
-.navbar li a:hover {
-    color: gray;
+header .logo {
+  width: 2.5rem;
 }
-.container-grid-cards{
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    width: 100%;
+header nav ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
 }
-.container-cards {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+header .navbar {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1.5rem;
 }
-
-/*Index.html*/
-.introduccion {
-    display: flex;
-    width: 100%;
-    height: 31.25rem;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+header .navbar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5625rem;
 }
-
-.introduccion .biografia {
-    width: 34.375rem;
-    height: 9rem;
-    overflow: hidden;
-    margin: .3125rem;
-    padding-right: 1.25rem;
-    text-align: center;
-}
-
-.separador {
-    margin-right: 7%;
-    width: .125rem;
-    height: 15.625rem;
-    background-color: black;
-}
-
-.introduccion .biografia-2 {
-    padding-right: 9.625rem;
-    width: 25rem;
-    height: 21rem;
-    overflow: hidden;
-    text-align: center;
-}
-.biografia-2 p{
-    margin-top: .925rem;
-    margin-left: 1.625rem;
-}
-
-.biografia-2 img {
-    width: 9.375rem;
-    height: 9.375rem;
+header .navbar li a:hover {
+  color: gray;
 }
 
 .slider {
-    width: 100%;
-}
-.cards{
-    background-color: black;
-    color: white;
-}
-h1 {
-    text-align: center;
+  width: 100%;
 }
 
-.cards {
-    width: 25%;
-    height: 29rem;
-    border: .0625rem solid black;
-    border-radius: .9375rem;
-    overflow: hidden;
-    box-shadow: 2px 2px 10px gray;
-    margin: 5px;
-    text-align: center;
+.container-grid-cards {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
 }
-.cards:hover{
-    box-shadow: 0 0 10px 3px black;
+.container-grid-cards h1 {
+  text-align: center;
 }
-
-.cards img {
-    width: 100%;
+.container-grid-cards .container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 4rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
-.form{
-    font-family:'roboto', sans-serif;
-    background-color: #ffffff;
-    margin: auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 4.5rem 3rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
-    text-align: center;
-
+.container-grid-cards .container-cards .cards {
+  width: 25%;
+  height: 29rem;
+  border: 0.0625rem solid black;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px gray;
+  margin: 5px;
+  text-align: center;
+  background-color: black;
+  color: white;
 }
-.form-titulo{
-    font-size: 2rem;
-    margin-bottom: .5rem;
-}
-.form-inicio{
-    font-weight: 300;
-}
-.form-link{
-    font-weight: 400;
-    color: black;
-}
-.form-link:hover{
-    color: red;
-}
-.form-container{
-    margin-top: 3rem;
-    display: grid;
-    gap: 2.5rem;
-}
-.form-grupo{
-    position: relative;
-    --color: gray;
-}
-.form-input{
-    width: 100%;
-    background: none;
-    color: grey;
-    font-size: 1rem;
-    padding: .6em .3em;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid var(--color);
-
-}
-.form-input:not(:placeholder-shown){
-    color: gray;
-}
-.form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label{
-    transform: translateY(-12px) scale(.7);
-    transform-origin: left top;
-    color: #0d6efd;
-}
-.form-label{
-    color: var(--color);
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform .5s, color .3s;
-
-}
-.form-submit{
-    background: #0d6efd;
-    color: #ffffff;
-    font-weight: 300;
-    font-size: 1rem;
-    padding: .8em 0;
-    border: none;
-    border-radius: .5em;
-}
-.form-linea{
-    position: absolute ;
-    border: 0;
-    left: 0;
-    width: 100%;
-    height: .0625rem;
-    background-color: #0d6efd;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform .4s;
-}
-.form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label{
-    transform: scale(0.6);
-}
-.mapa {
-    text-align: center;
+.container-grid-cards .container-cards .cards img {
+  width: 100%;
 }
 
-/*productos.html*/
+.form {
+  font-family: "roboto", sans-serif;
+  background-color: #ffffff;
+  margin: auto;
+  width: 90%;
+  margin-top: 3.875rem;
+  margin-bottom: 3.875rem;
+  max-width: 400px;
+  padding: 4.5rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.form .form-titulo {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.form .form-inicio {
+  font-weight: 300;
+}
+.form .form-inicio .form-link {
+  font-weight: 400;
+  color: black;
+}
+.form .form-inicio .form-link:hover {
+  color: red;
+}
+.form .form-container {
+  margin-top: 3rem;
+  display: grid;
+  gap: 2.5rem;
+}
+.form .form-container .form-grupo {
+  position: relative;
+  --color: gray;
+}
+.form .form-container .form-grupo .form-input {
+  width: 100%;
+  background: none;
+  color: grey;
+  font-size: 1rem;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+}
+.form .form-container .form-grupo .form-input:not(:placeholder-shown) {
+  color: gray;
+}
+.form .form-container .form-grupo .form-input:focus + .form-label, .form .form-container .form-grupo .form-input .form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: #0d6efd;
+}
+.form .form-container .form-grupo .form-label {
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform 0.5s, color 0.3s;
+}
+.form .form-container .form-grupo .form-linea {
+  position: absolute;
+  border: 0;
+  left: 0;
+  width: 100%;
+  height: 0.0625rem;
+  background-color: #0d6efd;
+  transform: scale(0);
+  transform: left bottom;
+  transition: transform 0.4s;
+}
+.form .form-container .form-submit {
+  background: #0d6efd;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 0.5em;
+}
 
+.container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.container-cards .cards-contact {
+  font-family: "roboto", sans-serif;
+  width: 40%;
+  height: 35rem;
+  border: 0.0625rem solid black;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+  margin: 5px;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+.container-cards .cards-contact .contacto {
+  flex-direction: column;
+  display: flex;
+  font-family: "roboto", sans-serif;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.container-cards .cards-contact .contacto .form-titulo {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.container-cards .cards-contact .contacto .form-grupo {
+  position: relative;
+  --color: gray;
+}
+.container-cards .cards-contact .contacto .form-grupo .form-input {
+  width: 100%;
+  background: none;
+  color: grey;
+  font-size: 1rem;
+  padding: 0.9em 0.6em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+}
+.container-cards .cards-contact .contacto .form-grupo .form-input:not(:placeholder-shown) {
+  color: gray;
+}
+.container-cards .cards-contact .contacto .form-grupo .form-input:focus + .form-label, .container-cards .cards-contact .contacto .form-grupo .form-input .form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-2px) scale(0.7);
+  transform-origin: left top;
+  color: #0d6efd;
+}
+.container-cards .cards-contact .contacto .form-grupo .form-label {
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform 0.5s, color 0.3s;
+}
+.container-cards .cards-contact .contacto .form-grupo .form-linea {
+  position: absolute;
+  border: 0;
+  left: 0;
+  width: 100%;
+  height: 0.0625rem;
+  background-color: #0d6efd;
+  transform: scale(0);
+  transform: left bottom;
+  transition: transform 0.4s;
+}
+.container-cards .cards-contact .contacto .form-submit-cont {
+  background: #0d6efd;
+  color: #ffffff;
+  font-weight: 200;
+  font-size: 1rem;
+  padding: 0.8em 0;
+  border: none;
+  border-radius: 0.5em;
+  width: 100%;
+  margin-top: 2rem;
+}
+.container-cards .cards-contact h3:hover {
+  color: red;
+}
+
+.grid-nosotros {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas: ". . . . . . . ." ". . historia historia historia historia . ." ". . historia historia historia historia . ." ". ubicacion ubicacion ubicacion mapa mapa mapa ." ". ubicacion ubicacion ubicacion mapa mapa mapa ." ". ubicacion ubicacion ubicacion mapa mapa mapa ." ". . que-vendemos que-vendemos que-vendemos que-vendemos . ." ". . que-vendemos que-vendemos que-vendemos que-vendemos . .";
+  gap: 4rem;
+}
+.grid-nosotros .historia {
+  grid-area: historia;
+  text-align: center;
+  margin: 0.625rem;
+}
+.grid-nosotros .ubicacion {
+  grid-area: ubicacion;
+  height: 100%;
+  align-self: center;
+  text-align: center;
+  box-shadow: 2px 2px 10px gray;
+  border: 0.375rem solid black;
+  border-radius: 0.9375rem;
+  background-color: black;
+  color: white;
+}
+.grid-nosotros .mapa {
+  grid-area: mapa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  box-shadow: 2px 2px 10px gray;
+  border: 0.375rem solid black;
+  border-radius: 0.9375rem;
+  background-color: black;
+}
+.grid-nosotros .mapa h2 {
+  color: white;
+}
+.grid-nosotros .mapa h3 {
+  margin-top: 1.625rem;
+  margin-right: 12rem;
+  color: white;
+}
+.grid-nosotros .mapa p {
+  margin-right: 10rem;
+  color: white;
+  margin-bottom: 1.625rem;
+}
+.grid-nosotros .mapa iframe {
+  width: 19rem;
+  height: 18.75rem;
+  box-shadow: 2px 2px 10px gray;
+  border-radius: 0.9375rem;
+}
+.grid-nosotros .mapa .ir {
+  text-align: center;
+  margin: 6%;
+  background-color: #0d6efd;
+  color: white;
+  font-size: 1.25rem;
+  width: 4rem;
+  height: 1.875rem;
+  text-decoration: none;
+  border-radius: 0.625rem;
+  border: none;
+}
+.grid-nosotros .Que-vendemos {
+  grid-area: que-vendemos;
+  text-align: center;
+}
+
+.introduccion {
+  display: flex;
+  width: 100%;
+  height: 31.25rem;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.introduccion .biografia {
+  width: 34.375rem;
+  height: 9rem;
+  overflow: hidden;
+  margin: 0.3125rem;
+  padding-right: 1.25rem;
+  text-align: center;
+}
+.introduccion .separador {
+  margin-right: 7%;
+  width: 0.125rem;
+  height: 15.625rem;
+  background-color: black;
+}
+.introduccion .biografia-2 {
+  padding-right: 9.625rem;
+  width: 25rem;
+  height: 21rem;
+  overflow: hidden;
+  text-align: center;
+}
+.introduccion .biografia-2 p {
+  margin-top: 0.925rem;
+  margin-left: 1.625rem;
+}
+.introduccion .biografia-2 img {
+  margin-left: 1.325rem;
+  width: 9.375rem;
+  height: 9.375rem;
+}
+
+.quienes-somos {
+  margin-top: 2.25rem;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+.inner .nosotros-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 2px 2px 10px gray;
+  border-radius: 0.9375rem;
+  margin-bottom: 3.575rem;
+}
+.inner .nosotros-card .col {
+  flex: 33.333%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.inner .nosotros-card .col .testimonio {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "img p1 p1 p1 " "p2 p2 p2 p2 ";
+  column-gap: 0.625rem;
+}
+.inner .nosotros-card .col .testimonio img {
+  grid-area: img;
+  width: 6.25rem;
+  border-radius: 50%;
+}
+.inner .nosotros-card .col .testimonio .p1 {
+  grid-area: p1;
+}
+.inner .nosotros-card .col .testimonio .p2 {
+  grid-area: p2;
+  margin-bottom: 1.25rem;
+}
 
 .vista-previa {
-    display: grid;
-    background-color: white;
-    padding: 8%;
-    margin: 8%;
-    grid-template-columns: repeat(5, auto);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-    "h1 h1 h1 h1"
-    ". border border ."
-    "img img h2 h2"
-    "img img p p"
-    "img img p p"
-
+  display: grid;
+  background-color: white;
+  padding: 8%;
+  margin: 8%;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "h1 h1 h1 h1" ". border border ." "img img h2 h2" "img img p p" "img img p p";
 }
-.vista-previa h1{
-    grid-area: h1;
+.vista-previa h1 {
+  grid-area: h1;
 }
-.border{
-    grid-area: border;
-
+.vista-previa .border {
+  grid-area: border;
+  width: 12.5rem;
+  height: 5px;
+  background: #6ab04c;
+  margin: 23px auto;
 }
 .vista-previa img {
-    grid-area: img;
-    margin-right: 2.25rem;
-    width: 25rem;
-    height: 25rem;
+  grid-area: img;
+  margin-right: 2.25rem;
+  width: 25rem;
+  height: 25rem;
 }
-.vista-previa h3{
-    grid-area: h2;
+.vista-previa h3 {
+  grid-area: h2;
 }
-
 .vista-previa p {
-    grid-area: p;
+  grid-area: p;
 }
 
-/*contacto.html*/
-.cards-contact {
-    font-family:'roboto', sans-serif;
-    width: 40%;
-    height: 35rem;
-    border: .0625rem solid black;
-    border-radius: .9375rem;
-    overflow: hidden;
-    margin: 5px;
-    text-align: center;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
+main h1 {
+  padding-top: 2.25rem;
+  color: #434343;
 }
-.contacto{
-    display: flex;
-    flex-direction: column;
-    font-family:'roboto', sans-serif;
-    background-color: #ffffff;
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
+main .border {
+  width: 160px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 23px auto;
 }
-.cards-contact h3:hover{
-    color: red;
-}
-.form-submit-cont{
-    background: #0d6efd;
-    color: #ffffff;
-    font-weight: 200;
-    font-size: 1rem;
-    padding: .8em 0;
-    border: none;
-    border-radius: .5em;
-    width: 100%;
-    margin-top: 2rem;
+main .clientes-info {
+  text-align: center;
 }
 
-
-
-/*productos.html*/
-.categorias {
-    list-style: none;
-    background-color: black;
-}
-
-/*nosotros.html*/
-.grid-nosotros {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, auto);
-    grid-template-areas:
-        ". . . . . . . ."
-        ". . historia historia historia historia . ."
-        ". . historia historia historia historia . ."
-        ". ubicacion ubicacion ubicacion mapa mapa mapa ."
-        ". ubicacion ubicacion ubicacion mapa mapa mapa ."
-        ". ubicacion ubicacion ubicacion mapa mapa mapa ."
-        ". . que-vendemos que-vendemos que-vendemos que-vendemos . ."
-        ". . que-vendemos que-vendemos que-vendemos que-vendemos . ."
-    ;
-    gap: 4rem;
-
-}
-
-.historia {
-    grid-area: historia;
-    text-align: center;
-    margin: .625rem;
-}
-
-.ubicacion {
-    grid-area: ubicacion;
-    height: 100%;
-    align-self: center;
-    text-align: center;
-    box-shadow: 2px 2px 10px gray;
-    border: .375rem solid black;
-    border-radius: .9375rem;
-    background-color: black;
-    color: white;
-}
-
-
-.mapa {
-    grid-area: mapa;
-    height: 100%;
-    overflow: hidden;
-    object-fit: cover;
-    box-shadow: 2px 2px 10px gray;
-    border: .375rem solid black;
-    border-radius: .9375rem;
-    background-color: black;
-}
-.mapa h2{
-    color: white;
-}
-
-.mapa h3 {
-    margin-right: 42%;
-    margin-top: 5%;
-    color: white;
-}
-
-
-.mapa p {
-    text-align: left;
-    margin-left: 17%;
-    color: white;
-}
-
-.mapa iframe {
-    margin: 5%;
-    width: 18.75rem;
-    height: 18.75rem;
-    box-shadow: 2px 2px 10px gray;
-    border-radius: .9375rem;
-
-}
-.nosotros-card{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    box-shadow: 2px 2px 10px gray;
-    border-radius: .9375rem;
-    margin-bottom: 3.575rem;
-}
-.testimonio{
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-    "img p1 p1 p1 "
-    "p2 p2 p2 p2 ";
-    column-gap: .625rem;
-}
-.testimonio img{
-    grid-area: img;
-}
-.testimonio .p1{
-    grid-area: p1;
-}
-.testimonio .p2{
-    grid-area: p2;
-}
-
-
-.ir {
-    margin: 6%;
-    background-color: #0d6efd;
-    color: #ffffff;
-    font-size: 1.25rem;
-    width: 4rem;
-    height: 1.875rem;
-    text-decoration: none;
-    border-radius: .625rem;
-    border: none;
-}
-.ir:hover{
-    background-color: #0c52bd;
-}
-.Que-vendemos {
-    grid-area: que-vendemos;
-    text-align: center;
-}
-
-.nosotros img {
-    width: 9.375rem;
-    height: 9.375rem;
-    margin-left: 1.875rem;
-}
-
-.nosotros p {
-    text-align: center;
-}
-
-/*cliente.html*/
 .Legales {
-    text-align: center;
+  text-align: center;
 }
-.h1-clientes{
-    text-align: center;
-    padding-top: 2.25rem;
-    color: #434343;
+.Legales h3 {
+  padding-top: 2.25rem;
+  color: #434343;
 }
-.clientes-info{
-    text-align: center;
+.Legales .border2 {
+  width: 100px;
+  height: 3px;
+  background: #6ab04c;
+  margin: 15px auto;
 }
-.leg {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    gap: 1.5rem;
-    font-size: 1.5625rem;
+.Legales .leg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+  font-size: 1.5625rem;
 }
-
-.leg a {
-
-    text-decoration: none;
-    padding-left: 1.625rem;
-    padding-right: 1.625rem;
+.Legales .leg a {
+  text-decoration: none;
+  padding: 0.625rem 1.625rem 0.625rem 1.625rem;
+  background: #0d6efd;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5em;
 }
-
-.leg a:hover {
-    background-color: #0c52bd;
-}
-.testimonios{
-    padding: 40px 0;
-    color: #434343;
-    text-align: center;
-}
-.testimonio-cliente{
-    background: #fff;
-    padding: 30px;
-}
-.testimonio-cliente img{
-    width: 6.25rem;
-    height: 6.25rem;
-    border-radius: 50%;
-}
-.inner{
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 20px ;
-}
-.border2{
-    width: 100px;
-    height: 3px;
-    background: #6ab04c;
-    margin: 15px auto;
-}
-.border{
-    width: 160px;
-    height: 5px;
-    background: #6ab04c;
-    margin: 23px auto;
-}
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.col{
-    flex: 33.333%;
-    max-width: 33.33%;
-    box-sizing: border-box;
-    padding: 15px;
-}
-.testimonio{
-    background: #fff;
-    padding: 30px;
-}
-.testimonio img{
-    width: 6.25rem;
-    height: 6.25rem;
-    border-radius: 50%;
-}
-.name{
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    margin: 1.25rem 0;
-}
-.stars{
-    color: #6ab04c;
-    margin-bottom: 1.25rem;
+.Legales .leg a:hover {
+  background-color: #0c52bd;
 }
 
-/*terminos.html*/
+.testimonios {
+  padding: 40px 0;
+  color: #434343;
+  text-align: center;
+}
+.testimonios .inner {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+.testimonios .inner .border {
+  width: 160px;
+  height: 5px;
+  background: #6ab04c;
+  margin: 23px auto;
+}
+.testimonios .inner .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.testimonios .inner .row .col {
+  flex: 33.333%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonios .inner .row .col .testimonio-cliente {
+  background: #fff;
+  padding: 30px;
+}
+.testimonios .inner .row .col .testimonio-cliente img {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 50%;
+}
+.testimonios .inner .row .col .testimonio-cliente .name {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin: 1.25rem 0;
+}
+.testimonios .inner .row .col .testimonio-cliente .stars {
+  color: #6ab04c;
+  margin-bottom: 1.25rem;
+}
+
 .terminos-condiciones {
-    text-align: center;
-    margin: 5%;
+  text-align: center;
+  margin: 5%;
 }
-
 .terminos-condiciones h2 {
-    color: red;
-    text-align: left;
+  color: red;
+  text-align: left;
 }
-
-.cambio {
-    text-align: left;
-}
-
-/*footer*/
-.wpp {
-    position: fixed;
-    bottom: 1.25rem;
-    /*se baja porq estaba arriba*/
-    right: 1.25rem;
-    /*para que se mueva a la derecha*/
-}
-.flecha{
-    position: fixed;
-    bottom: 1.25rem;
+.terminos-condiciones .cambio {
+  text-align: left;
 }
 
 .footer {
-    width: 100%;
-    background-color: black;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+.footer .wpp {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+}
+.footer .flecha {
+  position: fixed;
+  bottom: 1.25rem;
+}
+.footer .pseudo {
+  color: white;
+  text-decoration: none;
+}
+.footer .pseudo:hover {
+  color: red;
+}
+.footer .redes {
+  border: none;
 }
 
-footer {
-    color: white;
-}
+/*todo lo de components*/
+/*todo lo de card*/
 
-.pseudo {
-    color: white;
-    text-decoration: none;
-
-}
-
-.pseudo:hover {
-    color: red;
-}
-
-.redes {
-    border: none;
-}
-
-/*.footer-grid{
-    display: grid;
-    width: 100%;
-    height: 100%vh;
-    grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(3, 2.5rem);
-}
-/*.redes-1{
-    margin-left: .625rem;
-    grid-column: 1/2;
-    grid-row: 2/3 ;
-}
-.redes-2{
-    margin-left: .625rem;
-    grid-column: 2/3;
-    grid-row: 2/3 ;
-}
-.redes-3{
-    margin-left: .625rem;
-    grid-column: 3/4;
-    grid-row: 2/3 ;
-    
-}
-.formas-pago img{
-    width: 25rem;
-    height: 8.125rem;
-}
-.formas-pago{
-    grid-column: 4/6;
-    grid-row: 1/4;
-}*/
-@media (max-width: 1024px){
-    .cards{
-        width: 20rem;
-    }
-    .container-cards{
-        flex-wrap: wrap; 
-        height: 20%;
-    }
-    .container-cards-2{
-        flex-wrap: wrap;
-        height: 20%;
-    }
-    .mapas{
-        display: none;
-    }
-    .que-hacemos{
-        width: 100%;
-    }
-
-}
-@media (max-width: 768px){
-    .nosotros{
-        display: none;
-    }
-    .quienes-somos{
-        display: none;
-    }
-    .separador{
-        display: none;
-
-    }
-    .grid-nosotros{
-        display: flex;
-        flex-direction: column;
-    }
-    .container-cards{
-        display: flex;
-        flex-direction: column;
-    }
-    .cards-contact{
-        width: 90%;
-    }
-    .historia{
-        margin-top: 3.25rem;
-    }
-    .ubicacion{
-        width: 90%;
-
-    }
-    .mapa{
-        margin: 2.625rem;
-    }
-    .col{
-        flex: 100%;
-        max-width: 80%;
-    }
-    .vista-previa{
-        display: flex;
-        flex-direction: column;
-    }
-
-}
-@media(max-width: 575px){
-    .col{
-        flex: 100%;
-        max-width: 100%;
-    }
-    .vista-previa img{
-        width: 15rem;
-        height: 15rem;
-        margin: auto;
-    }
-}
-
-@media(max-width: 465px){
-    .flecha{
-        display: none;
-    }
-    .form-titulo{
-        font-size:1.5rem ;
-    }
-    .vista-previa img{
-        width: 15rem;
-        height: 15rem;
-        margin: auto;
-    }
-}
-@media(max-width: 400px){
-    .wpp{
-        display: none;
-    }
-    .ubicacion{
-        margin: .625rem;
-    }
-    .mapa{
-        margin: .625rem;
-    }
-    .testimonio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    }
-    .p2{
-        text-align: center;
-    }
-    .p1{
-        display: none;
-    }
-    .vista-previa img{
-        width: 10rem;
-        height: 10rem;
-        margin: auto;
-    }
-}
-
+/*# sourceMappingURL=style.css.map */

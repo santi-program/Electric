@@ -1,0 +1,24 @@
+.footer{
+    .wpp{
+        position: fixed;
+        bottom: 1.25rem;
+        right: 1.25rem;
+    }
+    .flecha{
+        position: fixed;
+        bottom: 1.25rem;
+    }
+    width: 100%;
+    background-color: black;
+    color: white;
+    .pseudo {
+        color: white;
+        text-decoration: none;
+        &:hover{
+            color: red;
+        }
+    }
+    .redes{
+        border: none;
+    }
+}
