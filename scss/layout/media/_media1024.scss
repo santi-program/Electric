@@ -1,0 +1,14 @@
+@media (max-width: 1024px){
+    .container-grid-cards{
+        margin-top: 2rem;
+        @include flex(column,center,center,2rem);
+        width: 100%;
+        .container-cards{
+            flex-wrap: wrap; 
+            height: 20%;
+            .cards{
+                width: 20rem;
+            }
+        }
+    }
+}

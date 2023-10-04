@@ -1,6 +1,6 @@
 .vista-previa {
     display: grid;
-    background-color: white;
+    background-color: $color;
     padding: 8%;
     margin: 8%;
     grid-template-columns: repeat(5, auto);
@@ -16,10 +16,7 @@
     }
     .border{
         grid-area: border;
-        width: 12.5rem;
-        height: 5px;
-        background: #6ab04c;
-        margin: 23px auto;
+        @include border(12.5rem,5px,#6ab04c,23px auto);
     }
     img{
         grid-area: img;

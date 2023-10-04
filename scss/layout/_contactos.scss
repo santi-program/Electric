@@ -1,13 +1,8 @@
 .container-cards{
-    display: flex;
+    @include flex(row,center,center,1rem);
     flex-wrap: wrap;
-    width: 100%;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    width: $ancho;
+    @include margin(5rem,5rem,none,none);
     .cards-contact {
         font-family:'roboto', sans-serif;
         width: 40%;
@@ -16,21 +11,18 @@
         border-radius: .9375rem;
         overflow: hidden;
         margin: 5px;
-        text-align: center;
+        text-align: $align;
         color: black;
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        align-items: center;
-        justify-content: center;
+        @include flex(column,center,center,none);
+        background-color: $color;
         .contacto{
             flex-direction: column;
             display: flex;
             font-family:'roboto', sans-serif;
             background-color: #ffffff;
-            width: 100%;
+            width: $ancho;
             max-width: 400px;
-            text-align: center;
+            text-align: $align;
             .form-titulo{
                 font-size: 2rem;
                 margin-bottom: .5rem;
@@ -40,12 +32,12 @@
                 --color: gray;
                 .form-input{
                     width: 100%;
-                    background: none;
+                    background: $display;
                     color: grey;
                     font-size: 1rem;
                     padding: .9em .6em;
-                    border: none;
-                    outline: none;
+                    border: $display;
+                    outline: $display;
                     border-bottom: 1px solid var(--color);
                     &:not(:placeholder-shown){
                         color: gray;   
@@ -70,7 +62,7 @@
                     position: absolute ;
                     border: 0;
                     left: 0;
-                    width: 100%;
+                    width: $ancho;
                     height: .0625rem;
                     background-color: #0d6efd;
                     transform: scale(0);
@@ -78,20 +70,9 @@
                     transition: transform .4s;
                 }
             }
-            .form-submit-cont{
-                background: #0d6efd;
-                color: #ffffff;
-                font-weight: 200;
-                font-size: 1rem;
-                padding: .8em 0;
-                border: none;
-                border-radius: .5em;
-                width: 100%;
-                margin-top: 2rem;
-            }
         }
         h3:hover{
-            color: red;
+            color: $backgroung;
         }
     }
     

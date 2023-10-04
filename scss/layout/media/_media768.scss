@@ -1,0 +1,78 @@
+@media (max-width: 768px){
+    .nosotros{
+        display: $display;
+        .quienes-somos{
+            display: $display;
+        }
+        .separador{
+            display: $display;
+        }
+    }
+    .grid-nosotros{
+        display: flex;
+        flex-direction: column;
+        .historia{
+            margin-top: 3.25rem;
+        }
+        .ubicacion{
+            width: 90%;
+        }
+        .mapa{
+            margin: 2.625rem;
+        }
+    }
+    .container-cards{
+        display: flex;
+        flex-direction: column;
+        .cards-contact{
+            width: 90%;
+        }
+    }
+    .inner{
+        max-width: 1200px;
+        margin: auto;
+        overflow: hidden;
+        padding: 0 20px ;
+        .nosotros-card{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: $align;
+            box-shadow: 2px 2px 10px gray;
+            border-radius: .9375rem;
+            margin-bottom: 3.575rem;
+            .col{
+                flex: $ancho;
+                max-width: $ancho;
+            }
+        }
+    }
+    .testimonios{
+        padding: 40px 0;
+        color: #434343;
+        text-align: center;
+        .client{
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px ;
+            .border{
+                @include border(160px,5px,#6ab04c,23px auto);
+            }
+                .row{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: $align;
+                    .col{
+                        flex: $display;
+                        max-width: 80%;
+                    }
+                }
+            }
+        }
+
+
+    .vista-previa{
+        @include flex(column,center,center,none);
+    }
+
+}

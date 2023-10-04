@@ -1,0 +1,33 @@
+@media(max-width: 575px){
+    .testimonios{
+        padding: 40px 0;
+        color: #434343;
+        text-align: $align;
+        .client{
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px ;
+            .border{
+                @include border(160px,5px,#6ab04c,23px auto);
+            }
+                .row{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: $align;
+                    .col{
+                        flex: $ancho;
+                        max-width: 90%;
+                    }
+                }
+            }
+        }
+    .vista-previa{
+        img{
+            width: 15rem;
+            height: 15rem;
+            margin: auto;
+            margin-bottom: 1.25rem ;
+        } 
+    } 
+}

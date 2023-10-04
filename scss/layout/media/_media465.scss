@@ -1,0 +1,29 @@
+@media(max-width: 465px){
+    .flecha{
+        display: $display;
+    }
+    .form{
+        font-family:'roboto', sans-serif;
+        background-color: #ffffff;
+        margin: auto;
+        width: 85%;
+        @include margin(3.875rem,3.875rem,none,none);
+        max-width: 400px;
+        padding: 4.5rem 3rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+        text-align: $align;
+        .form-titulo{
+            font-size:1.5rem ;
+        }
+    }
+    .vista-previa{
+        img{
+            width: 15rem;
+            height: 15rem;
+            margin: auto;
+            margin-bottom: 1.25rem;
+        }
+    }
+    
+}

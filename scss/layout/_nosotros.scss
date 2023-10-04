@@ -1,7 +1,7 @@
 .grid-nosotros{
     display: grid;
-    width: 100%;
-    height: 100%;
+    width: $ancho;
+    height: $ancho;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, auto);
     grid-template-areas:
@@ -17,27 +17,24 @@
     gap: 4rem;
     .historia{
         grid-area: historia;
-        text-align: center;
+        text-align: $align;
         margin: .625rem;
     }
     .ubicacion {
         grid-area: ubicacion;
-        height: 100%;
-        align-self: center;
-        text-align: center;
+        height: $ancho;
+        align-self: $align;
+        text-align: $align;
         box-shadow: 2px 2px 10px gray;
         border: .375rem solid black;
         border-radius: .9375rem;
         background-color: black;
-        color: white;
+        color: $color;
     }
     .mapa {
         grid-area: mapa;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
+        @include flex(column,center,center,none);
+        height: $ancho;
         overflow: hidden;
         object-fit: cover;
         box-shadow: 2px 2px 10px gray;
@@ -45,18 +42,16 @@
         border-radius: .9375rem;
         background-color: black;
         h2{
-            color: white;
+            color: $color;
             
         }
         h3{
-            margin-top: 1.625rem;
-            margin-right: 12rem;
-            color: white;
+            @include margin(1.625rem,none,none,12rem);
+            color: $color;
         }
         p{
-            margin-right: 10rem ;
-            color: white;
-            margin-bottom: 1.625rem;
+            @include margin(none,1.625rem,none,10rem);
+            color: $color;
         }
         iframe{
             width: 19rem;
@@ -65,38 +60,35 @@
             border-radius: .9375rem;
         }
         .ir{
-            text-align: center;
+            text-align: $align;
             margin: 6%;
             background-color: #0d6efd;
-            color: white;
+            color: $color;
             font-size: 1.25rem;
             width: 4rem;
             height: 1.875rem;
-            text-decoration: none;
+            text-decoration: $display;
             border-radius: .625rem;
-            border: none;
+            border: $display;
         }
         
     }
     .Que-vendemos {
         grid-area: que-vendemos;
-        text-align: center;
+        text-align: $align;
     }
 }
 .introduccion {
-    display: flex;
-    width: 100%;
+    @include flex(row,space-evenly,center,none);
+    width: $ancho;
     height: 31.25rem;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
     .biografia {
         width: 34.375rem;
         height: 9rem;
         overflow: hidden;
         margin: .3125rem;
         padding-right: 1.25rem;
-        text-align: center;
+        text-align: $align;
     }
     .separador {
         margin-right: 7%;
@@ -109,10 +101,9 @@
         width: 25rem;
         height: 21rem;
         overflow: hidden;
-        text-align: center;
+        text-align: $align;
         p{
-            margin-top: .925rem;
-            margin-left: 1.625rem;
+            @include margin(.925rem,none,1.625rem,none);
         }
         img{
             margin-left: 1.325rem;
@@ -132,7 +123,7 @@
     .nosotros-card{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: $align;
         box-shadow: 2px 2px 10px gray;
         border-radius: .9375rem;
         margin-bottom: 3.575rem;
@@ -143,8 +134,8 @@
             padding: 15px;
             .testimonio{
                 display: grid;
-                width: 100%;
-                height: 100%;
+                width: $ancho;
+                height: $ancho;
                 background: #fff;
                 padding: 30px;
                 grid-template-columns: repeat(4, 1fr);

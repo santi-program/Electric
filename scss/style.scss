@@ -1,11 +1,16 @@
 /*primero variables mixins y todo utilities*/
 @import "./utilities/variables";
+@import "./utilities/mixins";
 
 
 
 /*todo lo de base*/
 @import "./base/reset";
 
+/*todo lo de components*/
+@import "./components/formularios";
+@import "./components/botones";
+@import "./components/cards";
 
 
 /*todo layout*/
@@ -17,10 +22,10 @@
 @import "./layout/clientes";
 @import "./layout/terminos";
 @import "./layout/footer";
+@import "./layout/media/media1024";
 @import "./layout/media/media768";
+@import "./layout/media/media575";
+@import "./layout/media/media465";
+@import "./layout/media/media400";
 
 
-/*todo lo de components*/
-@import "./components/bootstrap";
-@import "./components/botones";
-@import "./components/cards";

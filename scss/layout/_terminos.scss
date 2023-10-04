@@ -1,11 +1,11 @@
 .terminos-condiciones {
-    text-align: center;
+    text-align: $align;
     margin: 5%;
-    h2{
-        color: red;
-        text-align: left;
-    }
     .cambio{
         text-align: left;
+    }
+    h2{
+        @extend .cambio;
+        color: $backgroung;
     }
 }
