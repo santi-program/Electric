@@ -150,7 +150,7 @@ h1, .Legales h3 {
 }
 .container-grid-cards .container-cards .cards {
   width: 25%;
-  height: 29rem;
+  height: 30rem;
   border: 0.0625rem solid black;
   border-radius: 0.9375rem;
   overflow: hidden;
@@ -159,6 +159,9 @@ h1, .Legales h3 {
   text-align: center;
   background-color: black;
   color: white;
+}
+.container-grid-cards .container-cards .cards:hover {
+  box-shadow: 0 0 10px 3px black;
 }
 .container-grid-cards .container-cards .cards img {
   width: 100%;
@@ -315,6 +318,9 @@ header .navbar li a:hover {
   background-color: black;
   color: white;
 }
+.grid-nosotros .ubicacion:hover {
+  box-shadow: 0 0 10px 3px black;
+}
 .grid-nosotros .mapa {
   grid-area: mapa;
   display: flex;
@@ -329,6 +335,9 @@ header .navbar li a:hover {
   border: 0.375rem solid black;
   border-radius: 0.9375rem;
   background-color: black;
+}
+.grid-nosotros .mapa:hover {
+  box-shadow: 0 0 10px 3px black;
 }
 .grid-nosotros .mapa h2 {
   color: white;
@@ -420,7 +429,7 @@ header .navbar li a:hover {
   max-width: 1200px;
   margin: auto;
   overflow: hidden;
-  padding: 0 20px;
+  padding: 4px 20px;
 }
 .inner .nosotros-card {
   display: flex;
@@ -468,6 +477,7 @@ header .navbar li a:hover {
   grid-template-columns: repeat(5, auto);
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "h1 h1 h1 h1" ". border border ." "img img h2 h2" "img img p p" "img img p p";
+  box-shadow: 0 0 6px 1px gray;
 }
 .vista-previa h1, .vista-previa .Legales h3, .Legales .vista-previa h3 {
   grid-area: h1;

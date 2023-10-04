@@ -30,6 +30,9 @@
         border-radius: .9375rem;
         background-color: black;
         color: $color;
+        &:hover{
+            box-shadow: 0 0 10px 3px black;
+        }
     }
     .mapa {
         grid-area: mapa;
@@ -41,6 +44,9 @@
         border: .375rem solid black;
         border-radius: .9375rem;
         background-color: black;
+        &:hover{
+            box-shadow: 0 0 10px 3px black;
+        }
         h2{
             color: $color;
             
@@ -119,7 +125,7 @@
     max-width: 1200px;
     margin: auto;
     overflow: hidden;
-    padding: 0 20px ;
+    padding: 4px 20px ;
     .nosotros-card{
         display: flex;
         flex-wrap: wrap;

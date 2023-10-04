@@ -13,7 +13,7 @@
         margin-bottom: 4rem;
         .cards {
             width: 25%;
-            height: 29rem;
+            height: 30rem;
             border: .0625rem solid black;
             border-radius: .9375rem;
             overflow: hidden;
@@ -22,6 +22,9 @@
             text-align: $align;
             background-color: black;
             color: $color;
+            &:hover{
+                box-shadow: 0 0 10px 3px black;
+            }
             img{
                 width: $ancho;
             }
