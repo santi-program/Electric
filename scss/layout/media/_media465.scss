@@ -1,4 +1,14 @@
 @media(max-width: 465px){
+    .slider{
+        height: 9.875rem;
+    }
+    .carousel-inner{
+        .carousel-item{
+            img{
+                height: 11rem;
+            }
+        }
+    }
     .flecha{
         display: $display;
     }

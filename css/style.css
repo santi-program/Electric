@@ -173,6 +173,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 3;
+  height: 4rem;
 }
 header .logo {
   width: 2.5rem;
@@ -404,6 +405,9 @@ header .navbar li a:hover {
   text-align: center;
   margin: 0.625rem;
 }
+.grid-nosotros .historia p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 .grid-nosotros .ubicacion {
   grid-area: ubicacion;
   height: 100%;
@@ -417,6 +421,15 @@ header .navbar li a:hover {
 }
 .grid-nosotros .ubicacion:hover {
   box-shadow: 0 0 10px 3px black;
+}
+.grid-nosotros .ubicacion p {
+  margin-top: 2.5rem;
+}
+.grid-nosotros .ubicacion .btn {
+  margin-top: 3rem;
+}
+.grid-nosotros .ubicacion .grupo-nosotros {
+  margin-top: 4rem;
 }
 .grid-nosotros .mapa {
   grid-area: mapa;
@@ -475,6 +488,9 @@ header .navbar li a:hover {
   grid-area: que-vendemos;
   text-align: center;
 }
+.grid-nosotros .Que-vendemos p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 
 .introduccion {
   display: flex;
@@ -493,6 +509,9 @@ header .navbar li a:hover {
   padding-right: 1.25rem;
   text-align: center;
 }
+.introduccion .biografia p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
 .introduccion .separador {
   margin-right: 7%;
   width: 0.125rem;
@@ -506,11 +525,19 @@ header .navbar li a:hover {
   overflow: hidden;
   text-align: center;
 }
+.introduccion .biografia-2 .presidente {
+  box-shadow: 0 0 6px 5px gray;
+  margin-top: 0.625rem;
+}
+.introduccion .biografia-2 .presidente:hover {
+  box-shadow: 0 0 6px 5px rgb(82, 79, 79);
+}
 .introduccion .biografia-2 p {
   margin-top: 0.925rem;
   margin-bottom: none;
   margin-left: 1.625rem;
   margin-right: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .introduccion .biografia-2 img {
   margin-left: 1.325rem;
@@ -704,13 +731,13 @@ main .clientes-info {
 .footer .flecha {
   position: fixed;
   bottom: 1.25rem;
-  z-index: 7;
+  z-index: 999;
 }
 .footer .wpp {
   position: fixed;
   bottom: 1.25rem;
   right: 1.25rem;
-  z-index: 7;
+  z-index: 999;
 }
 .footer .pseudo {
   color: white;
@@ -858,6 +885,12 @@ main .clientes-info {
   }
 }
 @media (max-width: 465px) {
+  .slider {
+    height: 9.875rem;
+  }
+  .carousel-inner .carousel-item img {
+    height: 11rem;
+  }
   .flecha {
     display: none;
   }
