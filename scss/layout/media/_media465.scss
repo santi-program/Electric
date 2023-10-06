@@ -27,6 +27,49 @@
             font-size:1.5rem ;
         }
     }
+    .container-cards{
+        display: flex;
+        flex-direction: column;
+        .cards-contact{
+            h3{
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            p{
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+            width: 90%;
+            .contacto{
+                .form-grupo{
+                    margin-left: 1.75rem;
+                    margin-right: 1.75rem;
+                }
+                .form-submit-cont{
+                width: 80%;
+                margin-left: 2.3rem;
+                }
+            }
+        }
+    }
+    .grid-nosotros{
+        display: flex;
+        flex-direction: column;
+        .historia{
+            margin-top: 3.25rem;
+        }
+        .ubicacion{
+            width: 90%;
+            margin: .625rem;
+        }
+        .mapa{
+            margin: 1.625rem;
+            h3{
+                text-align: left;
+                padding-right: .625rem;
+            }
+        }
+    }
     .vista-previa{
         img{
             width: 15rem;

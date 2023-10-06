@@ -57,6 +57,26 @@
             }
         }
     }
+    .container-cards{
+        display: flex;
+        flex-direction: column;
+        .cards-contact{
+            h3{
+                margin-left: 0.3rem;
+                margin-right: 0.3rem;
+            }
+            p{
+                margin-left: 0.3rem;
+                margin-right: 0.3rem;
+            }
+            .contacto{
+            .form-submit-cont{
+                width: 80%;
+                margin-left: 2rem;
+            }
+            }
+        }
+    }
     .vista-previa img{
         width: 10rem;
         height: 10rem;
