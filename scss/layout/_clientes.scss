@@ -1,7 +1,7 @@
 main{
     h1{
-        padding-top: 2.25rem;
         color: #434343;
+        padding-top: 2.25rem;
     }
         .border{
             @include border(160px,5px,#6ab04c,23px auto);
@@ -14,8 +14,10 @@ main{
 }
 .Legales{
     text-align: $align;
-    h3{
-        @extend h1;
+    
+    h2{
+        color: #434343;
+        padding-top: 1.5rem;
     }
     .border2{
         @include border(100px, 3px, #6ab04c, 15px auto);

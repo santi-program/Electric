@@ -12,7 +12,7 @@ body {
   background-color: #dcdada;
 }
 
-h1, .Legales h3 {
+h1 {
   text-align: center;
 }
 
@@ -135,7 +135,7 @@ h1, .Legales h3 {
   gap: 2rem;
   width: 100%;
 }
-.container-grid-cards h1, .container-grid-cards .Legales h3, .Legales .container-grid-cards h3 {
+.container-grid-cards h1 {
   text-align: center;
 }
 .container-grid-cards .container-cards {
@@ -603,7 +603,7 @@ header .navbar li a:hover {
   grid-template-areas: "h1 h1 h1 h1" ". border border ." "img img h2 h2" "img img p p" "img img p p";
   box-shadow: 0 0 6px 1px gray;
 }
-.vista-previa h1, .vista-previa .Legales h3, .Legales .vista-previa h3 {
+.vista-previa h1 {
   grid-area: h1;
 }
 .vista-previa .border, .vista-previa .testimonios .client .border, .testimonios .client .vista-previa .border {
@@ -626,9 +626,9 @@ header .navbar li a:hover {
   grid-area: p;
 }
 
-main h1, main .Legales h3, .Legales main h3 {
-  padding-top: 2.25rem;
+main h1 {
   color: #434343;
+  padding-top: 2.25rem;
 }
 main .border, main .testimonios .client .border, .testimonios .client main .border {
   width: 160px;
@@ -643,6 +643,10 @@ main .clientes-info {
 
 .Legales {
   text-align: center;
+}
+.Legales h2 {
+  color: #434343;
+  padding-top: 1.5rem;
 }
 .Legales .border2 {
   width: 100px;
