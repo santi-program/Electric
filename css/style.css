@@ -150,7 +150,7 @@ h1 {
 }
 .container-grid-cards .container-cards .cards {
   width: 25%;
-  height: 30rem;
+  height: 100%;
   border: 0.0625rem solid black;
   border-radius: 0.9375rem;
   overflow: hidden;
@@ -165,6 +165,9 @@ h1 {
 }
 .container-grid-cards .container-cards .cards img {
   width: 100%;
+}
+.container-grid-cards .container-cards .cards .btn {
+  margin-bottom: 2.5rem;
 }
 
 /*todo layout*/
@@ -1050,6 +1053,137 @@ main .clientes-info {
     width: 10rem;
     height: 10rem;
     margin: auto;
+  }
+}
+@media (min-width: 2560px) {
+  .container-grid-cards {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+  }
+  .container-grid-cards h1 {
+    text-align: center;
+  }
+  .container-grid-cards .container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .container-grid-cards .container-cards .cards {
+    width: 25%;
+    height: 100%;
+    border: 0.0625rem solid black;
+    border-radius: 0.9375rem;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px gray;
+    margin: 5px;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+  .container-grid-cards .container-cards .cards:hover {
+    box-shadow: 0 0 10px 3px black;
+  }
+  .container-grid-cards .container-cards .cards img {
+    width: 100%;
+    height: 35rem;
+  }
+  .container-grid-cards .container-cards .cards .btn {
+    margin-bottom: 2.5rem;
+  }
+  .form {
+    font-family: "roboto", sans-serif;
+    background-color: #ffffff;
+    margin: auto;
+    width: 90%;
+    margin-top: 3.875rem;
+    margin-bottom: 3.875rem;
+    margin-left: none;
+    margin-right: none;
+    max-width: 500px;
+    padding: 4.5rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  .form .form-titulo {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .form .form-inicio {
+    font-weight: 300;
+  }
+  .form .form-inicio .form-link {
+    font-weight: 400;
+    color: black;
+  }
+  .form .form-inicio .form-link:hover {
+    color: red;
+  }
+  .form .form-container {
+    margin-top: 3rem;
+    display: grid;
+    gap: 2.5rem;
+  }
+  .form .form-container .form-grupo {
+    position: relative;
+    --color: gray;
+  }
+  .form .form-container .form-grupo .form-input {
+    width: 100%;
+    background: none;
+    color: grey;
+    font-size: 1.5rem;
+    padding: 0.6em 0.3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+  }
+  .form .form-container .form-grupo .form-input:not(:placeholder-shown) {
+    color: gray;
+  }
+  .form .form-container .form-grupo .form-input:focus + .form-label, .form .form-container .form-grupo .form-input .form-input:not(:placeholder-shown) + .form-label {
+    transform: translateY(-12px) scale(0.7);
+    transform-origin: left top;
+    color: #0d6efd;
+  }
+  .form .form-container .form-grupo .form-label {
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform 0.5s, color 0.3s;
+  }
+  .form .form-container .form-grupo .form-linea {
+    position: absolute;
+    border: 0;
+    left: 0;
+    width: 100%;
+    height: 0.0625rem;
+    background-color: #0d6efd;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform 0.4s;
+  }
+  .form .form-container .form-submit {
+    background: #0d6efd;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 2rem;
+    padding: 0.8em 0;
+    border: none;
+    border-radius: 0.5em;
   }
 }
 
