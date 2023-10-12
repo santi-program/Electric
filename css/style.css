@@ -1055,7 +1055,7 @@ main .clientes-info {
     margin: auto;
   }
 }
-@media (min-width: 2560px) {
+@media (min-width: 2300px) {
   .container-grid-cards {
     margin-top: 2rem;
     display: flex;
