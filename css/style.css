@@ -1097,8 +1097,15 @@ main .clientes-info {
     width: 100%;
     height: 35rem;
   }
+  .container-grid-cards .container-cards .cards h2 {
+    font-size: 3rem;
+  }
+  .container-grid-cards .container-cards .cards p {
+    font-size: 2rem;
+  }
   .container-grid-cards .container-cards .cards .btn {
     margin-bottom: 2.5rem;
+    font-size: 2rem;
   }
   .form {
     font-family: "roboto", sans-serif;
